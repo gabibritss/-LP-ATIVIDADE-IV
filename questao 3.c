@@ -15,7 +15,7 @@ float compra(struct Produto *produto, float saldo)
     int compra;
     float resultado; 
    
-    printf("Quantos produtos você deseja comprar ? ");
+    printf("Quantos produtos vocÃª deseja comprar ? ");
     scanf("%d", &compra);
 
     if (compra > 0 && compra <= produto->estoque)
@@ -25,13 +25,13 @@ float compra(struct Produto *produto, float saldo)
     } 
     else
     {
-        printf("\nQuantidade inválida.");
+        printf("\nQuantidade invÃ¡lida.");
     }
 }
 
 int main()
 {
-    float saldo =0; // Inicialize a variável saldo
+    float saldo =0; 
     int opcao;
 
     setlocale(LC_ALL, "portuguese");
@@ -41,22 +41,22 @@ int main()
     printf("\nDigite o nome do produto:");
     gets(resultado.nome); 
 
-    printf("\nDigite o preço do produto:");
+    printf("\nDigite o preÃ§o do produto:");
     scanf("%f", &resultado.preco);
 
     printf("\nQuantidade de produto:");
     scanf("%d", &resultado.estoque);
 
     printf("Nome do produto:%s\n", resultado.nome);
-    printf("Preço do produto: %.2f\n", resultado.preco);
+    printf("PreÃ§o do produto: %.2f\n", resultado.preco);
     printf("Quantidade de produto: %d\n", resultado.estoque);
 
     do
     {
-        printf("Escolha uma das opções abaixo:\n");
-        printf("(1°) Realizar compra\n");
-        printf("(2°) Consultar estoque\n");
-        printf("(3°) Sair do programa\n");
+        printf("Escolha uma das opÃ§Ãµes abaixo:\n");
+        printf("(1Â°) Realizar compra\n");
+        printf("(2Â°) Consultar estoque\n");
+        printf("(3Â°) Sair do programa\n");
         scanf("%d", &opcao);
 
         switch (opcao)
